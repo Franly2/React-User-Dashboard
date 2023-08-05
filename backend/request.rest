@@ -1,0 +1,25 @@
+GET http://localhost:3000/users 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJmcmFubHkgYnVkaSBwcmFtYW5hIiwiZW1haWwiOiJlbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2OTA5NTc4MjUsImV4cCI6MTY5MDk1Nzg0NX0.smrNApdgEIGLcyrYW5TjtB5BJUgMn8-k1Op1NqHqG2g
+
+
+###
+POST http://localhost:3000/users 
+Content-Type: application/json 
+
+{   
+    "name" : "franly budi pramana",
+    "email" : "email@gmail.com",
+    "password" : "2",
+    "confirmPassword" : "2"
+}
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email" : "email@gmail.com",
+    "password" :"2"
+}
+
+###
+DELETE http://localhost:3000/logout
